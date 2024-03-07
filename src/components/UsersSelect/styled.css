@@ -1,0 +1,37 @@
+.users-select-container {
+    display: flex;
+    padding: 32px;
+    gap: 8px;
+    flex-direction: column;
+    justify-content: center;
+    width: max-content;
+}
+
+.limit-container {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    font-size: 13px;
+    line-height: 20px;
+    color: #3F4254;
+}
+
+.limit-title {
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.limits {
+    height: max-content;
+    display: flex;
+    gap: 8px;
+}
+
+.limit {
+    cursor: pointer;
+}
+
+.limit:hover,
+.active-limit {
+    color: #4971FF;
+}

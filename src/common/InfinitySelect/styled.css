@@ -1,0 +1,120 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    position: relative;
+    min-width: 362px;
+}
+
+.title {
+    font-size: 13px;
+    line-height: 20px;
+    color: #3F4254;
+}
+
+.options-container-hidden {
+    display: none;
+}
+
+.placeholder {
+    color: #8e8e8e;
+    opacity: 0.7;
+}
+
+.select-container {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.chevron {
+    height: 16px;
+    width: 16px;
+    transition: 0.2s;
+}
+
+.chevron-rotate {
+    transform: rotate(180deg);
+}
+
+.selected-option {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 6px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    background: white;
+    gap: 24px;
+}
+
+.selected-option-text {
+    white-space: nowrap;
+    overflow: hidden;
+    font-size: 13px;
+    line-height: 20px;
+    color: #3F4254;
+}
+
+.selected-option:hover {
+    box-shadow: inset -1px 0 0 #4971FF, inset 1px 0 0 #4971FF, inset 0 -1px 0 #4971FF, inset 0 1px 0 #4971FF;
+}
+
+.selected-option-active {
+    box-shadow: inset -1px 0 0 #4971FF, inset 1px 0 0 #4971FF, inset 0 -1px 0 #4971FF, inset 0 1px 0 #4971FF;
+}
+
+.loading {
+    padding: 8px 12px;
+    font-size: 13px;
+}
+
+.options-container {
+    width: 100%;
+    overflow-y: auto;
+    height: 200px;
+    position: absolute;
+    top: 36px;
+    left: 0;
+    border-radius: 4px;
+    overflow-x: hidden;
+    background: white;
+}
+
+.logo {
+    position: relative;
+    width: 16px;
+    height: 16px;
+    border-radius: 100%;
+    background: #4971FF;
+    font-weight: 500;
+}
+
+.logo-text {
+    color: white;
+    font-size: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.option {
+    padding: 8px 12px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 13px;
+    line-height: 16px;
+    cursor: pointer;
+    transition: 0.2s;
+    color: #3F4254;
+}
+
+.option:hover {
+    background: #e4eaff;
+}
+
+.active-option {
+    box-shadow: inset -2px 0 0 #4971FF, inset 2px 0 0 #4971FF, inset 0 -2px 0 #4971FF, inset 0 2px 0 #4971FF;
+}
